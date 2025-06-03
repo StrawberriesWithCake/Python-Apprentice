@@ -11,7 +11,9 @@ to see how to use the turtle commands.
 """
 
 # These lines are needed in most turtle programs
-import turtle                           # Tell Python we want to work with the turtle
+import turtle
+
+from matplotlib import colors                           # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 
@@ -20,7 +22,14 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 
 ... # Your code here
-
+colorlist = ['red', 'orange', 'yellow', 'purple']
+for i in range(2):
+    tina.fillcolor(colorlist[i])
+    tina.begin_fill()
+    tina.circle(50)
+    tina.end_fill()
+    tina.right(60)
+    tina.forward(100)
 turtle.exitonclick()                    # Close the window when we click on it
 
 

@@ -9,3 +9,10 @@ write a new program that uses a loop to draw a pentagon.
 """
 
 ... # Your code here
+import turtle
+turtle.setup(600,600,0,0)
+kloppopediuh = turtle.Turtle()
+for i in range(5):
+    kloppopediuh.forward(100)
+    kloppopediuh.left(72)
+turtle.exitonclick()
