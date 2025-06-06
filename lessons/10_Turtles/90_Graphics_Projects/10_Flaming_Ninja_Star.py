@@ -10,10 +10,12 @@ import turtle
 
 # Returns a random color!
 def getRandomColor():
-    return "#%06X" % (random.randint(0, 0xFFFFFF))
-
-
-colors = ["red", "blue", "green", "yellow", "orange"]
+    return "#%06X" % (random.randint(0, 0xFFFFFF)) 
+maroon = "#700d02"
+pumpkin = "#c24e10"
+highlite = "#f5e74e"
+fruita = "#b01c48"
+colors = [maroon, pumpkin, highlite, fruita]
 
 
 def getNextColor(i):
@@ -34,9 +36,9 @@ t.width(2)
 t.speed(0) 
 
 for i in range(25):
-    t.pencolor(getRandomColor())
+    t.pencolor(getNextColor(i))
 
-    t.fillcolor(getRandomColor()) 
+    t.fillcolor(getNextColor(i)) 
    
     t.begin_fill()
 

@@ -25,8 +25,8 @@ for color in colors:                            # loop through the colors
 
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 tina.backward(76)
-for i in range[4]:
-    tina.color(colors[3, 2, 1, 0])
+for i in range(3, -1, -1):
+    tina.color(colors[i])
     tina.forward(forward)
     tina.left(left)
 

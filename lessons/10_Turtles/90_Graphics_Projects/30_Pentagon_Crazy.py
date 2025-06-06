@@ -7,11 +7,14 @@ This program already works. Run it, then change it to make it draw a different p
 import random
 import turtle
 
+
 def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
 
+
 def getNextColor(i):
     return colors[i % len(colors)]
+
 
 window = turtle.Screen()
 window.bgcolor("black")
@@ -24,7 +27,7 @@ myTurtle.shape("turtle")
 myTurtle.speed(0)
 myTurtle.width(1)
 
-sides = 5
+sides = 10
 angle = 360 / sides
 
 for i in range(360):
