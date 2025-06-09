@@ -30,17 +30,32 @@ the second is the message to show the user.
 messagebox.showinfo('What you are', "You are a baby.")
 
 """
-
+# how to define some functions
+#Am I missing anything?
+#I feel like I'm doing manything wrong
 from tkinter import messagebox, simpledialog, Tk # import required modules
-
+age = 0-100
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window; we just want to see pop ups
 
 # Ask the user's age
-
+age =  simpledialog.askfloat("Your Age", "How old are you?")
 # Use if statements to determine the age group
 # and create a message
-
+if age > 0 and age < 3:
+    messagebox.showinfo("Welcome to Earth! But..", "You're too young to even be here. Is there some trusty adult watching over you right now? You probably can't even respond this dialogue, anyway, let alone read it.")
+elif age > 2 and age < 6:
+    messagebox.showinfo("Congratulations!", "On moving on from total infancy, which means babyhood. Your parents taught you how to read, right? Can you understand this?")
+elif age > 5 and age < 13:
+    messagebox.showinfo("I swear,", "You better not be an Ipad kid.")
+elif age == 13:
+    messagebox.showinfo(":o", "Me too!")
+elif age > 13 and age < 20:
+    messagebox.showinfo("Ew", "Teenagers these days are REALLY moody. Probably always have been.")
+elif age > 19 and age < 65:
+    messagebox.showinfo("Wow.", "Being an adult is tough. But hey, atleast you can look forward to retirement.")
+else:
+    messagebox.showinfo("It's impressive you've managed to hang on this long", "You're really really really really really really old.")
 # Show the message to the user
 
 
