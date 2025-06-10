@@ -49,7 +49,7 @@ elif age > 2 and age < 6:
 elif age > 5 and age < 13:
     messagebox.showinfo("I swear,", "You better not be an Ipad kid.")
 elif age == 13:
-    messagebox.showinfo(":o", "Me too!")
+    messagebox.showinfo(":D", "Me too!")
 elif age > 13 and age < 20:
     messagebox.showinfo("Ew", "Teenagers these days are REALLY moody. Probably always have been.")
 elif age > 19 and age < 65:
