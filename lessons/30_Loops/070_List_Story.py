@@ -11,7 +11,8 @@ words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the',
 
 story = []
 story.append(words[0:3:2])
-story.append(words[7:9:9])
+story.append(words[7:8])
+story.append(words[9:10])
 story.append(words[7])
 story.append(words[1])
 story.append(words[15])
