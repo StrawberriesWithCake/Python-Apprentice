@@ -33,10 +33,22 @@ app = App("Numbers Grid", layout="grid")
 
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
+for i in range(10):
+    for j in range(10):
+        if j+i*10+1 < 10:
+            print("", end= " ")
 
+        print(f"{j+i*10+1}", end=' ')
+num =   j+i*10+1
+if num % 5 == 0:
+    print('🦡')
+if num % 3 == 0:
+    print('🍄')
+if num % 15 == 0:
+    print('🐍')
 # In the loop, calculate or increment the number
 
-# Use % determing the display, using fizzbuzz rules
+# Use % determining the display, using fizzbuzz rules
 
 # If you are displaying a number, calculate the sum of the digits and determine the color
 
